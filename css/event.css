@@ -1,0 +1,20 @@
+.eh{background:#0a0a0a;color:#fff;padding:56px 0 72px}
+.eh .g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.eh .poster{position:relative}
+.eh .poster img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.eh .poster .badge{left:auto;right:-24px;bottom:-24px;width:110px;height:110px}
+.eh .poster .badge b{font-size:44px}
+.eh h1{font-size:120px;margin:16px 0 18px}
+.eh .lead{font-size:20px;color:#ddd;margin:0 0 26px;max-width:540px}
+.when{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:28px;font-size:15px}
+.when b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#45d8c9}
+.tnote{background:#fff1cc;color:#3b2a00;padding:14px 18px;font-size:14px;margin-bottom:28px}
+.lineup{display:grid;gap:14px;margin:8px 0 28px}
+.lu{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;border:1px solid #e3e3e0;background:#fff;text-decoration:none;color:#1f1f1f}
+.lu img{width:120px;height:120px;object-fit:cover}
+.lu .t{padding-right:16px}
+.lu b{font-size:18px;display:block}
+.lu span{font-size:15px;color:#444}
+.body p{font-size:18px;max-width:720px}
+.share{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:14px;color:#555}
+@media (max-width:900px){.eh .g{grid-template-columns:1fr}.eh h1{font-size:76px}.eh .poster .badge{right:12px;bottom:-30px}}

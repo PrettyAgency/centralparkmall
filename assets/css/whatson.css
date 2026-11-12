@@ -1,0 +1,16 @@
+.none{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;border:1px solid #2a2a2a;padding:36px;background:#151515}
+.ring{width:110px;height:110px;position:relative}
+.ring svg{position:absolute;inset:0;animation:spin 30s linear infinite}
+.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Big Shoulders Display",Impact,sans-serif;font-size:30px;color:#45d8c9}
+.none h3{font-size:48px}
+.none p{margin:8px 0 0;color:#c9c9c9;max-width:560px}
+.hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.hubc{position:relative;min-height:340px;overflow:hidden;color:#fff;text-decoration:none;background:#000;display:block}
+.hubc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.hubc:hover img{transform:scale(1.04)}
+.hubc:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.88),rgba(0,0,0,.15) 65%)}
+.hubc .in{position:absolute;left:0;right:0;bottom:0;padding:28px;z-index:2}
+.hubc h3{font-size:56px;margin:8px 0}
+.hubc p{margin:0;color:#ddd;max-width:440px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:900px){.none{grid-template-columns:1fr;text-align:left}.hub{grid-template-columns:1fr}}
